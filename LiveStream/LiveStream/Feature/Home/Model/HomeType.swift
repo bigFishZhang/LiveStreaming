@@ -9,6 +9,6 @@
 import UIKit
 
 class HomeType: BaseModel {
-    var title : String = ""
-    var type : Int = 0
+  @objc  var title : String = ""
+  @objc  var type : Int = 0
 }

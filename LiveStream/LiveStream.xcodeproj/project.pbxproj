@@ -33,6 +33,8 @@
 		78932F07227C3C1500780DEB /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F06227C3C1500780DEB /* HomeType.swift */; };
 		78932F09227C3C3600780DEB /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F08227C3C3600780DEB /* AnchorModel.swift */; };
 		78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F0A227C3D3500780DEB /* AnchorViewController.swift */; };
+		78932F0E227C485100780DEB /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F0C227C485100780DEB /* HomeViewCell.swift */; };
+		78932F0F227C485100780DEB /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78932F0D227C485100780DEB /* HomeViewCell.xib */; };
 		78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */; };
 		78DBA646225FAD5700FD155D /* ZBAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA644225FAD5700FD155D /* ZBAPIConst.swift */; };
 		78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA645225FAD5700FD155D /* ZBUIConst.swift */; };
@@ -69,6 +71,8 @@
 		78932F06227C3C1500780DEB /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
 		78932F08227C3C3600780DEB /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		78932F0A227C3D3500780DEB /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		78932F0C227C485100780DEB /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		78932F0D227C485100780DEB /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
 		78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ZBExtension.swift"; sourceTree = "<group>"; };
 		78DBA644225FAD5700FD155D /* ZBAPIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBAPIConst.swift; sourceTree = "<group>"; };
 		78DBA645225FAD5700FD155D /* ZBUIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBUIConst.swift; sourceTree = "<group>"; };
@@ -288,6 +292,8 @@
 		78932EFB227C34ED00780DEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78932F0C227C485100780DEB /* HomeViewCell.swift */,
+				78932F0D227C485100780DEB /* HomeViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 				786CFB34225E3BDB00254D48 /* LaunchScreen.storyboard in Resources */,
 				786CFB31225E3BDB00254D48 /* Assets.xcassets in Resources */,
 				78932EE2227C2ED300780DEB /* types.plist in Resources */,
+				78932F0F227C485100780DEB /* HomeViewCell.xib in Resources */,
 				786CFB2F225E3BD900254D48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +496,7 @@
 				78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */,
 				78932EF8227C348A00780DEB /* NSDate+Extension.swift in Sources */,
 				786CFB41225E3C2C00254D48 /* ZBNavigationController.swift in Sources */,
+				78932F0E227C485100780DEB /* HomeViewCell.swift in Sources */,
 				786CFB3F225E3C2C00254D48 /* ZBTabBarController.swift in Sources */,
 				786CFB4F225E3C3A00254D48 /* HomeViewController.swift in Sources */,
 				78932EF4227C321900780DEB /* ZBTitleStyle.swift in Sources */,

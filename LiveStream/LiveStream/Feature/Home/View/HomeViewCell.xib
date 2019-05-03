@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeViewCell" customModule="LiveStream" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="177" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jfG-kw-dOO">
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="195"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="60i-3a-uIi">
+                        <rect key="frame" x="145.5" y="8" width="23.5" height="13.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沉默的大鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noz-ed-lUH">
+                        <rect key="frame" x="8" y="172" width="62" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-90-9Eg">
+                        <rect key="frame" x="78" y="173.5" width="45" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="x7J-v1-gDR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2023" image="home_icon_people"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="noz-ed-lUH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="6C9-ls-lpy"/>
+                <constraint firstItem="f8Z-90-9Eg" firstAttribute="leading" secondItem="noz-ed-lUH" secondAttribute="trailing" constant="8" id="7zT-by-OE6"/>
+                <constraint firstItem="f8Z-90-9Eg" firstAttribute="centerY" secondItem="noz-ed-lUH" secondAttribute="centerY" id="Ifl-c3-vRs"/>
+                <constraint firstAttribute="trailing" secondItem="60i-3a-uIi" secondAttribute="trailing" constant="8" id="N0B-7Y-Dgt"/>
+                <constraint firstItem="jfG-kw-dOO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SHb-ju-PvS"/>
+                <constraint firstAttribute="trailing" secondItem="jfG-kw-dOO" secondAttribute="trailing" id="Ze0-kq-5zA"/>
+                <constraint firstAttribute="bottom" secondItem="jfG-kw-dOO" secondAttribute="bottom" id="e5E-5r-ykm"/>
+                <constraint firstAttribute="bottom" secondItem="noz-ed-lUH" secondAttribute="bottom" constant="8" id="iaJ-1k-GAD"/>
+                <constraint firstItem="60i-3a-uIi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="kcl-gg-alw"/>
+                <constraint firstItem="jfG-kw-dOO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="z1g-h7-14H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="193" height="137"/>
+            <connections>
+                <outlet property="albumImageView" destination="jfG-kw-dOO" id="TsX-v2-RbV"/>
+                <outlet property="liveImageView" destination="60i-3a-uIi" id="v4x-bp-exP"/>
+                <outlet property="nickNameLabel" destination="noz-ed-lUH" id="v14-54-PV8"/>
+                <outlet property="onlinePeopleLabel" destination="f8Z-90-9Eg" id="5m8-lO-8En"/>
+            </connections>
+            <point key="canvasLocation" x="241.30434782608697" y="146.98660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_icon_live" width="23.5" height="13.5"/>
+        <image name="home_icon_people" width="7" height="7"/>
+    </resources>
+</document>
