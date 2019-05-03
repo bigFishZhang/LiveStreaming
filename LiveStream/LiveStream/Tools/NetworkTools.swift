@@ -32,12 +32,13 @@ class NetworkTools {
         Alamofire.request(URLString, method: method, parameters: parameters).validate(contentType: ["text/plain"]).responseJSON { (response) in
             
             // 3.获取结果
-            guard let result = response.result.value else {
-                print(response.result.error!)
-                return
-            }            
+//            guard let result = response.result.value else {
+//                print(response.result.error!)
+//                return
+//            }
             // 4.将结果回调出去
-            finishedCallback(result)
+//            finishedCallback(result)
+            finishedCallback(response.result)
         }
         
     }
