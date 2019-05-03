@@ -12,8 +12,13 @@ class ZBNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationBar.barTintColor = UIColor.black
+        navigationBar.isTranslucent = false
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         // Do any additional setup after loading the view.
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
 

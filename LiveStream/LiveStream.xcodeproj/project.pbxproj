@@ -12,9 +12,35 @@
 		786CFB2F225E3BD900254D48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786CFB2D225E3BD900254D48 /* Main.storyboard */; };
 		786CFB31225E3BDB00254D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786CFB30225E3BDB00254D48 /* Assets.xcassets */; };
 		786CFB34225E3BDB00254D48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786CFB32225E3BDB00254D48 /* LaunchScreen.storyboard */; };
+		786CFB3F225E3C2C00254D48 /* ZBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB3C225E3C2B00254D48 /* ZBTabBarController.swift */; };
+		786CFB40225E3C2C00254D48 /* ZBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB3D225E3C2C00254D48 /* ZBTabBar.swift */; };
+		786CFB41225E3C2C00254D48 /* ZBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB3E225E3C2C00254D48 /* ZBNavigationController.swift */; };
+		786CFB4F225E3C3A00254D48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB45225E3C3A00254D48 /* HomeViewController.swift */; };
+		786CFB52225E3C3A00254D48 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB4E225E3C3A00254D48 /* MineViewController.swift */; };
+		786CFB56225E402000254D48 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB55225E402000254D48 /* FoundViewController.swift */; };
+		786CFB58225E402B00254D48 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB57225E402B00254D48 /* RankViewController.swift */; };
+		78932EE2227C2ED300780DEB /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78932EE1227C2ED300780DEB /* types.plist */; };
+		78932EE8227C30B000780DEB /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EE7227C30B000780DEB /* BaseModel.swift */; };
+		78932EF3227C321900780DEB /* ZBTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EEF227C321800780DEB /* ZBTitleView.swift */; };
+		78932EF4227C321900780DEB /* ZBTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EF0227C321800780DEB /* ZBTitleStyle.swift */; };
+		78932EF5227C321900780DEB /* ZBContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EF1227C321800780DEB /* ZBContentView.swift */; };
+		78932EF6227C321900780DEB /* ZBPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EF2227C321900780DEB /* ZBPageView.swift */; };
+		78932EF8227C348A00780DEB /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EF7227C348A00780DEB /* NSDate+Extension.swift */; };
+		78932EFE227C351300780DEB /* ZBWaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932EFD227C351300780DEB /* ZBWaterFlowLayout.swift */; };
+		78932F01227C36F500780DEB /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F00227C36F500780DEB /* NetworkTools.swift */; };
+		78932F03227C399800780DEB /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F02227C399800780DEB /* KingfisherExtension.swift */; };
+		78932F05227C3BD100780DEB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F04227C3BD100780DEB /* HomeViewModel.swift */; };
+		78932F07227C3C1500780DEB /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F06227C3C1500780DEB /* HomeType.swift */; };
+		78932F09227C3C3600780DEB /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F08227C3C3600780DEB /* AnchorModel.swift */; };
+		78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F0A227C3D3500780DEB /* AnchorViewController.swift */; };
+		78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */; };
+		78DBA646225FAD5700FD155D /* ZBAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA644225FAD5700FD155D /* ZBAPIConst.swift */; };
+		78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA645225FAD5700FD155D /* ZBUIConst.swift */; };
+		AF443089BA66018E5505F9C4 /* Pods_LiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D87CE73020D5B945B3BB34D /* Pods-LiveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.release.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.release.xcconfig"; sourceTree = "<group>"; };
 		786CFB26225E3BD900254D48 /* LiveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786CFB29225E3BD900254D48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786CFB2B225E3BD900254D48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,32 @@
 		786CFB30225E3BDB00254D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786CFB33225E3BDB00254D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786CFB35225E3BDB00254D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786CFB3C225E3C2B00254D48 /* ZBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBTabBarController.swift; sourceTree = "<group>"; };
+		786CFB3D225E3C2C00254D48 /* ZBTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBTabBar.swift; sourceTree = "<group>"; };
+		786CFB3E225E3C2C00254D48 /* ZBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBNavigationController.swift; sourceTree = "<group>"; };
+		786CFB45225E3C3A00254D48 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		786CFB4E225E3C3A00254D48 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		786CFB55225E402000254D48 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
+		786CFB57225E402B00254D48 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		78932EE1227C2ED300780DEB /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		78932EE7227C30B000780DEB /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		78932EEF227C321800780DEB /* ZBTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBTitleView.swift; sourceTree = "<group>"; };
+		78932EF0227C321800780DEB /* ZBTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBTitleStyle.swift; sourceTree = "<group>"; };
+		78932EF1227C321800780DEB /* ZBContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBContentView.swift; sourceTree = "<group>"; };
+		78932EF2227C321900780DEB /* ZBPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageView.swift; sourceTree = "<group>"; };
+		78932EF7227C348A00780DEB /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		78932EFD227C351300780DEB /* ZBWaterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBWaterFlowLayout.swift; sourceTree = "<group>"; };
+		78932F00227C36F500780DEB /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		78932F02227C399800780DEB /* KingfisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		78932F04227C3BD100780DEB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		78932F06227C3C1500780DEB /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		78932F08227C3C3600780DEB /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		78932F0A227C3D3500780DEB /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ZBExtension.swift"; sourceTree = "<group>"; };
+		78DBA644225FAD5700FD155D /* ZBAPIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBAPIConst.swift; sourceTree = "<group>"; };
+		78DBA645225FAD5700FD155D /* ZBUIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBUIConst.swift; sourceTree = "<group>"; };
+		8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF443089BA66018E5505F9C4 /* Pods_LiveStream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +93,8 @@
 			children = (
 				786CFB28225E3BD900254D48 /* LiveStream */,
 				786CFB27225E3BD900254D48 /* Products */,
+				9FCD3747EF4D7C9C12CB35F6 /* Pods */,
+				D26BE0B0D586A744053F733A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +109,14 @@
 		786CFB28225E3BD900254D48 /* LiveStream */ = {
 			isa = PBXGroup;
 			children = (
-				786CFB29225E3BD900254D48 /* AppDelegate.swift */,
+				78932EFF227C365300780DEB /* Tools */,
+				78932EED227C31CC00780DEB /* Vendors */,
+				78932EE3227C2F7700780DEB /* Base */,
+				78932EE0227C2EC300780DEB /* Resource */,
+				78DBA643225FAD5700FD155D /* Config */,
+				78DBA640225FAD3A00FD155D /* Extension */,
+				786CFB42225E3C3A00254D48 /* Feature */,
+				786CFB3B225E3C1800254D48 /* App */,
 				786CFB2B225E3BD900254D48 /* ViewController.swift */,
 				786CFB2D225E3BD900254D48 /* Main.storyboard */,
 				786CFB30225E3BDB00254D48 /* Assets.xcassets */,
@@ -64,6 +126,224 @@
 			path = LiveStream;
 			sourceTree = "<group>";
 		};
+		786CFB3B225E3C1800254D48 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB3E225E3C2C00254D48 /* ZBNavigationController.swift */,
+				786CFB3D225E3C2C00254D48 /* ZBTabBar.swift */,
+				786CFB3C225E3C2B00254D48 /* ZBTabBarController.swift */,
+				786CFB29225E3BD900254D48 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		786CFB42225E3C3A00254D48 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB54225E400300254D48 /* Found */,
+				786CFB53225E3FFC00254D48 /* Rank */,
+				786CFB43225E3C3A00254D48 /* Home */,
+				786CFB4C225E3C3A00254D48 /* Mine */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		786CFB43225E3C3A00254D48 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				78932EFC227C34F400780DEB /* Other */,
+				78932EFB227C34ED00780DEB /* View */,
+				78932EFA227C34E000780DEB /* Model */,
+				78932EF9227C34D800780DEB /* ViewModel */,
+				786CFB44225E3C3A00254D48 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		786CFB44225E3C3A00254D48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78932F0A227C3D3500780DEB /* AnchorViewController.swift */,
+				786CFB45225E3C3A00254D48 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		786CFB4C225E3C3A00254D48 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB4D225E3C3A00254D48 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		786CFB4D225E3C3A00254D48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB4E225E3C3A00254D48 /* MineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		786CFB53225E3FFC00254D48 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB57225E402B00254D48 /* RankViewController.swift */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		786CFB54225E400300254D48 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB55225E402000254D48 /* FoundViewController.swift */,
+			);
+			path = Found;
+			sourceTree = "<group>";
+		};
+		78932EE0227C2EC300780DEB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				78932EE1227C2ED300780DEB /* types.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		78932EE3227C2F7700780DEB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				78932EEC227C30D200780DEB /* Controller */,
+				78932EEB227C30C900780DEB /* View */,
+				78932EEA227C30C200780DEB /* ViewModel */,
+				78932EE9227C30B700780DEB /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		78932EE9227C30B700780DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78932EE7227C30B000780DEB /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78932EEA227C30C200780DEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78932EEB227C30C900780DEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78932EEC227C30D200780DEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78932EED227C31CC00780DEB /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				78932EEE227C31D500780DEB /* ZBPageView */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		78932EEE227C31D500780DEB /* ZBPageView */ = {
+			isa = PBXGroup;
+			children = (
+				78932EF2227C321900780DEB /* ZBPageView.swift */,
+				78932EF1227C321800780DEB /* ZBContentView.swift */,
+				78932EEF227C321800780DEB /* ZBTitleView.swift */,
+				78932EF0227C321800780DEB /* ZBTitleStyle.swift */,
+			);
+			path = ZBPageView;
+			sourceTree = "<group>";
+		};
+		78932EF9227C34D800780DEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78932F04227C3BD100780DEB /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78932EFA227C34E000780DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78932F06227C3C1500780DEB /* HomeType.swift */,
+				78932F08227C3C3600780DEB /* AnchorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78932EFB227C34ED00780DEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78932EFC227C34F400780DEB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				78932EFD227C351300780DEB /* ZBWaterFlowLayout.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		78932EFF227C365300780DEB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				78932F00227C36F500780DEB /* NetworkTools.swift */,
+				78932F02227C399800780DEB /* KingfisherExtension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		78DBA640225FAD3A00FD155D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */,
+				78932EF7227C348A00780DEB /* NSDate+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		78DBA643225FAD5700FD155D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				78DBA644225FAD5700FD155D /* ZBAPIConst.swift */,
+				78DBA645225FAD5700FD155D /* ZBUIConst.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9FCD3747EF4D7C9C12CB35F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */,
+				1D87CE73020D5B945B3BB34D /* Pods-LiveStream.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D26BE0B0D586A744053F733A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 786CFB38225E3BDB00254D48 /* Build configuration list for PBXNativeTarget "LiveStream" */;
 			buildPhases = (
+				25D8ECC1CBBB06C6488AB73F /* [CP] Check Pods Manifest.lock */,
 				786CFB22225E3BD900254D48 /* Sources */,
 				786CFB23225E3BD900254D48 /* Frameworks */,
 				786CFB24225E3BD900254D48 /* Resources */,
+				31CEE1F7AF11C5938E342BBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +378,7 @@
 				TargetAttributes = {
 					786CFB25225E3BD900254D48 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -124,19 +407,92 @@
 			files = (
 				786CFB34225E3BDB00254D48 /* LaunchScreen.storyboard in Resources */,
 				786CFB31225E3BDB00254D48 /* Assets.xcassets in Resources */,
+				78932EE2227C2ED300780DEB /* types.plist in Resources */,
 				786CFB2F225E3BD900254D48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25D8ECC1CBBB06C6488AB73F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31CEE1F7AF11C5938E342BBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveStream/Pods-LiveStream-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveStream/Pods-LiveStream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		786CFB22225E3BD900254D48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78932EF5227C321900780DEB /* ZBContentView.swift in Sources */,
+				78932F05227C3BD100780DEB /* HomeViewModel.swift in Sources */,
 				786CFB2C225E3BD900254D48 /* ViewController.swift in Sources */,
+				78932EF3227C321900780DEB /* ZBTitleView.swift in Sources */,
+				78932EF6227C321900780DEB /* ZBPageView.swift in Sources */,
+				786CFB58225E402B00254D48 /* RankViewController.swift in Sources */,
+				78932EFE227C351300780DEB /* ZBWaterFlowLayout.swift in Sources */,
+				786CFB52225E3C3A00254D48 /* MineViewController.swift in Sources */,
+				78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */,
+				78932F07227C3C1500780DEB /* HomeType.swift in Sources */,
+				78932EE8227C30B000780DEB /* BaseModel.swift in Sources */,
+				78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */,
+				78932F03227C399800780DEB /* KingfisherExtension.swift in Sources */,
+				786CFB40225E3C2C00254D48 /* ZBTabBar.swift in Sources */,
+				786CFB56225E402000254D48 /* FoundViewController.swift in Sources */,
 				786CFB2A225E3BD900254D48 /* AppDelegate.swift in Sources */,
+				78932F01227C36F500780DEB /* NetworkTools.swift in Sources */,
+				78932F09227C3C3600780DEB /* AnchorModel.swift in Sources */,
+				78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */,
+				78932EF8227C348A00780DEB /* NSDate+Extension.swift in Sources */,
+				786CFB41225E3C2C00254D48 /* ZBNavigationController.swift in Sources */,
+				786CFB3F225E3C2C00254D48 /* ZBTabBarController.swift in Sources */,
+				786CFB4F225E3C3A00254D48 /* HomeViewController.swift in Sources */,
+				78932EF4227C321900780DEB /* ZBTitleStyle.swift in Sources */,
+				78DBA646225FAD5700FD155D /* ZBAPIConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,37 +636,43 @@
 		};
 		786CFB39225E3BDB00254D48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5WX43KK4M;
 				INFOPLIST_FILE = LiveStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zzb.com.LiveStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		786CFB3A225E3BDB00254D48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D87CE73020D5B945B3BB34D /* Pods-LiveStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5WX43KK4M;
 				INFOPLIST_FILE = LiveStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zzb.com.LiveStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
