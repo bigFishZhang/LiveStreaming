@@ -81,8 +81,8 @@ extension AnchorViewController : UICollectionViewDataSource, ZBWaterFlowLayoutDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("IndexPath: \(indexPath.row)")
-//        let liveVc = RoomViewController()
-//        navigationController?.pushViewController(liveVc, animated: true)
+        let liveVc = RoomViewController()
+        navigationController?.pushViewController(liveVc, animated: true)
     }
     
     func waterfallLayout(_ layout: ZBWaterFlowLayout, indexPath: IndexPath) -> CGFloat {

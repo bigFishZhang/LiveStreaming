@@ -35,6 +35,8 @@
 		78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F0A227C3D3500780DEB /* AnchorViewController.swift */; };
 		78932F0E227C485100780DEB /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F0C227C485100780DEB /* HomeViewCell.swift */; };
 		78932F0F227C485100780DEB /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78932F0D227C485100780DEB /* HomeViewCell.xib */; };
+		78932F13227C5E6000780DEB /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78932F11227C5E6000780DEB /* RoomViewController.swift */; };
+		78932F14227C5E6000780DEB /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78932F12227C5E6000780DEB /* RoomViewController.xib */; };
 		78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */; };
 		78DBA646225FAD5700FD155D /* ZBAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA644225FAD5700FD155D /* ZBAPIConst.swift */; };
 		78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA645225FAD5700FD155D /* ZBUIConst.swift */; };
@@ -73,6 +75,8 @@
 		78932F0A227C3D3500780DEB /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		78932F0C227C485100780DEB /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		78932F0D227C485100780DEB /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		78932F11227C5E6000780DEB /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		78932F12227C5E6000780DEB /* RoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
 		78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ZBExtension.swift"; sourceTree = "<group>"; };
 		78DBA644225FAD5700FD155D /* ZBAPIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBAPIConst.swift; sourceTree = "<group>"; };
 		78DBA645225FAD5700FD155D /* ZBUIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBUIConst.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		786CFB42225E3C3A00254D48 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				78932F10227C5E4A00780DEB /* Live */,
 				786CFB54225E400300254D48 /* Found */,
 				786CFB53225E3FFC00254D48 /* Rank */,
 				786CFB43225E3C3A00254D48 /* Home */,
@@ -315,6 +320,31 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		78932F10227C5E4A00780DEB /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				78932F16227C5E6C00780DEB /* View */,
+				78932F15227C5E6700780DEB /* Model */,
+				78932F11227C5E6000780DEB /* RoomViewController.swift */,
+				78932F12227C5E6000780DEB /* RoomViewController.xib */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		78932F15227C5E6700780DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78932F16227C5E6C00780DEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		78DBA640225FAD3A00FD155D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				786CFB34225E3BDB00254D48 /* LaunchScreen.storyboard in Resources */,
+				78932F14227C5E6000780DEB /* RoomViewController.xib in Resources */,
 				786CFB31225E3BDB00254D48 /* Assets.xcassets in Resources */,
 				78932EE2227C2ED300780DEB /* types.plist in Resources */,
 				78932F0F227C485100780DEB /* HomeViewCell.xib in Resources */,
@@ -499,6 +530,7 @@
 				78932F0E227C485100780DEB /* HomeViewCell.swift in Sources */,
 				786CFB3F225E3C2C00254D48 /* ZBTabBarController.swift in Sources */,
 				786CFB4F225E3C3A00254D48 /* HomeViewController.swift in Sources */,
+				78932F13227C5E6000780DEB /* RoomViewController.swift in Sources */,
 				78932EF4227C321900780DEB /* ZBTitleStyle.swift in Sources */,
 				78DBA646225FAD5700FD155D /* ZBAPIConst.swift in Sources */,
 			);
