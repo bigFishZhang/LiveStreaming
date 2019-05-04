@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoomViewController: UIViewController {
+class RoomViewController: UIViewController,EmitterHandle {
     // MARK: 控件属性
     @IBOutlet weak var bgImageView: UIImageView!
 
@@ -54,15 +54,18 @@ extension RoomViewController {
     
     @IBAction func bottomMenuClick(_ sender: UIButton) {
         switch sender.tag {
-        case 0:
+        case 10:
             print("点击了聊天")
-        case 1:
+        case 11:
             print("点击了分享")
-        case 2:
+        case 12:
             print("点击了礼物")
-        case 3:
+        case 13:
             print("点击了更多")
-        case 4:
+        case 14:
+            sender.isSelected = !sender.isSelected
+            let point = CGPoint(x: sender.center.x, y: view.bounds.height - sender.bounds.height * 0.5)
+            sender.isSelected ? startEmitter(point) : stopEmitter()
             print("点击了粒子")
         default:
             fatalError("未处理按钮")

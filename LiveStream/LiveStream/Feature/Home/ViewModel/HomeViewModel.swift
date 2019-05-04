@@ -40,7 +40,7 @@ extension HomeViewModel {
             let arr = [["roomid":520515,
                         "name":"千熙修仙中~",
                         "pic51":"https://file.qf.56.com/p/group1/M11/96/69/MTAuMTguMTcuMTg3/MTAwMTA2XzE1NTUzODkxNjEwNDI=/cut@m=crop,x=0,y=0,w=509,h=509_cut@m=resize,w=640,h=640.jpg",
-                        "pic74":"https://file.qf.56.com/p/group1/M01/A1/A9/MTAuMTguMTcuMTg2/MTAwMTA2XzE1NDU0OTA2NzM5NDc=/cut@m=crop,x=19,y=23,w=1033,h=1033_cut@m=resize,w=640,h=640.jpg",
+                        "pic74":"https://file.qf.56.com/p/group1/M11/96/69/MTAuMTguMTcuMTg3/MTAwMTA2XzE1NTUzODkxNjEwNDI=/cut@m=crop,x=0,y=0,w=509,h=509_cut@m=resize,w=640,h=640.jpg",
                         "live":0,
                         "push":1,
                         "focus":888],["roomid":520056,

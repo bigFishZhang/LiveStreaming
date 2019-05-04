@@ -40,6 +40,7 @@
 		78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */; };
 		78DBA646225FAD5700FD155D /* ZBAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA644225FAD5700FD155D /* ZBAPIConst.swift */; };
 		78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBA645225FAD5700FD155D /* ZBUIConst.swift */; };
+		78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F574E0227D501600CE0D38 /* EmitterHandle.swift */; };
 		AF443089BA66018E5505F9C4 /* Pods_LiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		78DBA641225FAD3A00FD155D /* UIColor+ZBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ZBExtension.swift"; sourceTree = "<group>"; };
 		78DBA644225FAD5700FD155D /* ZBAPIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBAPIConst.swift; sourceTree = "<group>"; };
 		78DBA645225FAD5700FD155D /* ZBUIConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBUIConst.swift; sourceTree = "<group>"; };
+		78F574E0227D501600CE0D38 /* EmitterHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterHandle.swift; sourceTree = "<group>"; };
 		8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 		786CFB28225E3BD900254D48 /* LiveStream */ = {
 			isa = PBXGroup;
 			children = (
+				78F574DF227D4FF800CE0D38 /* Protocol */,
 				78932EFF227C365300780DEB /* Tools */,
 				78932EED227C31CC00780DEB /* Vendors */,
 				78932EE3227C2F7700780DEB /* Base */,
@@ -363,6 +366,14 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		78F574DF227D4FF800CE0D38 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				78F574E0227D501600CE0D38 /* EmitterHandle.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		9FCD3747EF4D7C9C12CB35F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,6 +525,7 @@
 				786CFB58225E402B00254D48 /* RankViewController.swift in Sources */,
 				78932EFE227C351300780DEB /* ZBWaterFlowLayout.swift in Sources */,
 				786CFB52225E3C3A00254D48 /* MineViewController.swift in Sources */,
+				78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */,
 				78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */,
 				78932F07227C3C1500780DEB /* HomeType.swift in Sources */,
 				78932EE8227C30B000780DEB /* BaseModel.swift in Sources */,

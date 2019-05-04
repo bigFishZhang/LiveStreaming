@@ -27,39 +27,36 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mrQ-Hv-H3L" userLabel="顶部的View">
                     <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-ys-oKN" userLabel="聊天">
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-ys-oKN" userLabel="聊天">
                             <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="44"/>
                             <state key="normal" image="room_btn_chat"/>
-                            <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="SlV-ez-Bp6"/>
-                            </connections>
                         </button>
-                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-FK-byG" userLabel="分享">
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-FK-byG" userLabel="分享">
                             <rect key="frame" x="82.666666666666671" y="0.0" width="83.000000000000014" height="44"/>
                             <state key="normal" image="menu_btn_share"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="oYT-HH-hYu"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="M8A-Ze-bh6"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-Hn-DsV" userLabel="礼物">
+                        <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-Hn-DsV" userLabel="礼物">
                             <rect key="frame" x="165.66666666666666" y="0.0" width="82.666666666666657" height="44"/>
                             <state key="normal" image="room_btn_gift"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="hzb-DE-mhO"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="W0b-bp-gNu"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ra-VK-rDs" userLabel="更多">
+                        <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ra-VK-rDs" userLabel="更多">
                             <rect key="frame" x="248.33333333333337" y="0.0" width="83" height="44"/>
                             <state key="normal" image="room_btn_more"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="Xlg-b7-lYq"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="wLS-Zj-WpX"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgX-od-akh" userLabel="星星">
+                        <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgX-od-akh" userLabel="星星">
                             <rect key="frame" x="331.33333333333331" y="0.0" width="82.666666666666686" height="44"/>
                             <state key="normal" image="room_btn_qfstar"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="q4u-jP-Wmy"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="NNN-Xd-8Iq"/>
                             </connections>
                         </button>
                     </subviews>
@@ -164,7 +161,7 @@
                 <constraint firstItem="NtW-0W-oUI" firstAttribute="top" secondItem="tCg-ho-cC0" secondAttribute="top" constant="20" id="xu5-0z-juz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="i6u-e7-fsN"/>
-            <point key="canvasLocation" x="45.5" y="53.5"/>
+            <point key="canvasLocation" x="-593" y="-123"/>
         </view>
     </objects>
     <resources>
