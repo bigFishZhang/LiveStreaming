@@ -11,7 +11,6 @@ import UIKit
 
 class ZBTitleStyle {
     
-    var titleHeight:CGFloat = 44
     /// 普通Title颜色
     var normalColor:UIColor = UIColor(r: 0, g: 0, b: 0)
     /// 选中Title颜色
@@ -22,6 +21,8 @@ class ZBTitleStyle {
     var isScrollEnable:Bool = false
     /// 滚动Title的字体间距
     var titleMargin :CGFloat = 30
+    /// 滚动Title的高度
+    var titleHeight :CGFloat = 44
     
     /// 是否显示底部滚动条
     var isShowScrollLine:Bool = false

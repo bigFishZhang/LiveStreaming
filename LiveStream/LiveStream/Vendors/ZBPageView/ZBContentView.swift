@@ -32,7 +32,7 @@ class ZBContentView: UIView {
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
         
-       let collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kContentCellId)
         collectionView.isPagingEnabled = true
@@ -108,7 +108,7 @@ extension ZBContentView:UICollectionViewDelegate{
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-         isForbiddenScroll = false
+        isForbiddenScroll = false
         startOffsetX = scrollView.contentOffset.x
         
     }
@@ -116,7 +116,7 @@ extension ZBContentView:UICollectionViewDelegate{
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //0 判断是否禁止
-//        guard !isForbiddenScroll else {return}
+        //        guard !isForbiddenScroll else {return}
         // 0 判断偏移量和开始时是否一致
         guard startOffsetX != scrollView.contentOffset.x,!isForbiddenScroll else {
             return
@@ -140,7 +140,7 @@ extension ZBContentView:UICollectionViewDelegate{
             if targetIndex < 0 {
                 targetIndex  = 0
             }
-             progress = (startOffsetX - scrollView.contentOffset.x) / scrollView.bounds.width
+            progress = (startOffsetX - scrollView.contentOffset.x) / scrollView.bounds.width
         }
         
         // 3 通知代理

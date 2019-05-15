@@ -28,5 +28,8 @@ extension UIImageView {
         guard let url = URL(string: URLString) else { return }
         kf.setImage(with: url, placeholder : UIImage(named: placeHolderName))
     }
+    
+    
+    
 }
 

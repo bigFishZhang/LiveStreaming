@@ -43,6 +43,8 @@
 		78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F574E0227D501600CE0D38 /* EmitterHandle.swift */; };
 		AF443089BA66018E5505F9C4 /* Pods_LiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */; };
 		D19B1682227F2C6B003360E4 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B1681227F2C6B003360E4 /* NibLoadable.swift */; };
+		FF8CA98D228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */; };
+		FF8CA98E228C07EF00EC5186 /* ZBPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19B1681227F2C6B003360E4 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
+		FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,8 @@
 		78932EEE227C31D500780DEB /* ZBPageView */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */,
+				FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */,
 				78932EF2227C321900780DEB /* ZBPageView.swift */,
 				78932EF1227C321800780DEB /* ZBContentView.swift */,
 				78932EEF227C321800780DEB /* ZBTitleView.swift */,
@@ -520,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8CA98E228C07EF00EC5186 /* ZBPageCollectionView.swift in Sources */,
 				78932EF5227C321900780DEB /* ZBContentView.swift in Sources */,
 				78932F05227C3BD100780DEB /* HomeViewModel.swift in Sources */,
 				786CFB2C225E3BD900254D48 /* ViewController.swift in Sources */,
@@ -539,6 +546,7 @@
 				786CFB2A225E3BD900254D48 /* AppDelegate.swift in Sources */,
 				78932F01227C36F500780DEB /* NetworkTools.swift in Sources */,
 				78932F09227C3C3600780DEB /* AnchorModel.swift in Sources */,
+				FF8CA98D228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift in Sources */,
 				D19B1682227F2C6B003360E4 /* NibLoadable.swift in Sources */,
 				78DBA647225FAD5700FD155D /* ZBUIConst.swift in Sources */,
 				78932EF8227C348A00780DEB /* NSDate+Extension.swift in Sources */,
