@@ -46,7 +46,7 @@ extension EmoticonView{
         
         //3 set
         pageCollectionView.dataSource = self
-//        pageCollectionView.delegate = self
+        pageCollectionView.delegate = self
         pageCollectionView.register(nib: UINib(nibName: "EmoticonViewCell", bundle: nil), identifier: kEmoticonCellID)
     }
 }
@@ -71,4 +71,12 @@ extension EmoticonView : ZBPageCollectionViewDataSource{
     
 }
 
-//extension EmoticonView : zbpagecollectionviewd
+extension EmoticonView : ZBPageCollectionViewDelegate{
+    func pageCollectionView(_ collectionView: ZBPageCollectionView, didSelectItemAt indexPath: IndexPath) {
+        let emoticon = EmoticonViewModel.shareInstance.packages[indexPath.section].emoticons[indexPath.item]
+        if let emoticonClickCallback = emoticonClickCallback{
+            emoticonClickCallback(emoticon)
+        }
+        
+    }
+}

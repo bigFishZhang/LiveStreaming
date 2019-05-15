@@ -15,11 +15,16 @@ protocol ZBPageCollectionViewDataSource:class {
     
 }
 
+protocol ZBPageCollectionViewDelegate:class {
+    func pageCollectionView(_ collectionView: ZBPageCollectionView, didSelectItemAt indexPath: IndexPath)
+}
+
 
 
 class ZBPageCollectionView: UIView {
     
     weak var dataSource:ZBPageCollectionViewDataSource?
+    weak var delegate:ZBPageCollectionViewDelegate?
     
     fileprivate var titles:[String]
     fileprivate var isTitleInTop:Bool
@@ -131,6 +136,12 @@ extension ZBPageCollectionView:UICollectionViewDataSource{
 
 
 extension ZBPageCollectionView:UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.pageCollectionView(self, didSelectItemAt: indexPath)
+    }
+    
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         scrollViewEndScroll()
     }
