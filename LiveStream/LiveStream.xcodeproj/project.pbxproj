@@ -43,6 +43,10 @@
 		78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F574E0227D501600CE0D38 /* EmitterHandle.swift */; };
 		AF443089BA66018E5505F9C4 /* Pods_LiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */; };
 		D19B1682227F2C6B003360E4 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B1681227F2C6B003360E4 /* NibLoadable.swift */; };
+		D1B7505D228C643000E55BFA /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7505C228C643000E55BFA /* GiftListView.swift */; };
+		D1B75061228C645100E55BFA /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7505F228C645100E55BFA /* GiftViewCell.swift */; };
+		D1B75062228C645100E55BFA /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B75060228C645100E55BFA /* GiftViewCell.xib */; };
+		D1B75064228C645D00E55BFA /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B75063228C645D00E55BFA /* GiftListView.xib */; };
 		FF8CA98D228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */; };
 		FF8CA98E228C07EF00EC5186 /* ZBPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */; };
 		FF8CA992228C10AA00EC5186 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA991228C10AA00EC5186 /* ChatToolsView.swift */; };
@@ -97,6 +101,10 @@
 		78F574E0227D501600CE0D38 /* EmitterHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterHandle.swift; sourceTree = "<group>"; };
 		8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19B1681227F2C6B003360E4 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D1B7505C228C643000E55BFA /* GiftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		D1B7505F228C645100E55BFA /* GiftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		D1B75060228C645100E55BFA /* GiftViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		D1B75063228C645D00E55BFA /* GiftListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
 		D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionView.swift; sourceTree = "<group>"; };
@@ -376,6 +384,7 @@
 		78932F16227C5E6C00780DEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D1B7505B228C641700E55BFA /* GiftView */,
 				FF8CA98F228C103700EC5186 /* ChatView */,
 			);
 			path = View;
@@ -415,6 +424,17 @@
 				1D87CE73020D5B945B3BB34D /* Pods-LiveStream.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1B7505B228C641700E55BFA /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7505C228C643000E55BFA /* GiftListView.swift */,
+				D1B75063228C645D00E55BFA /* GiftListView.xib */,
+				D1B7505F228C645100E55BFA /* GiftViewCell.swift */,
+				D1B75060228C645100E55BFA /* GiftViewCell.xib */,
+			);
+			path = GiftView;
 			sourceTree = "<group>";
 		};
 		D26BE0B0D586A744053F733A /* Frameworks */ = {
@@ -521,9 +541,11 @@
 				786CFB31225E3BDB00254D48 /* Assets.xcassets in Resources */,
 				FF8CA9A4228C2EAB00EC5186 /* QHSohuGifSort.plist in Resources */,
 				78932EE2227C2ED300780DEB /* types.plist in Resources */,
+				D1B75064228C645D00E55BFA /* GiftListView.xib in Resources */,
 				78932F0F227C485100780DEB /* HomeViewCell.xib in Resources */,
 				786CFB2F225E3BD900254D48 /* Main.storyboard in Resources */,
 				FF8CA99A228C110900EC5186 /* EmoticonViewCell.xib in Resources */,
+				D1B75062228C645100E55BFA /* GiftViewCell.xib in Resources */,
 				FF8CA994228C10D700EC5186 /* ChatToolsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +622,7 @@
 				78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */,
 				78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */,
 				78932F07227C3C1500780DEB /* HomeType.swift in Sources */,
+				D1B7505D228C643000E55BFA /* GiftListView.swift in Sources */,
 				78932EE8227C30B000780DEB /* BaseModel.swift in Sources */,
 				78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */,
 				78932F03227C399800780DEB /* KingfisherExtension.swift in Sources */,
@@ -616,6 +639,7 @@
 				78932F0E227C485100780DEB /* HomeViewCell.swift in Sources */,
 				FF8CA992228C10AA00EC5186 /* ChatToolsView.swift in Sources */,
 				786CFB3F225E3C2C00254D48 /* ZBTabBarController.swift in Sources */,
+				D1B75061228C645100E55BFA /* GiftViewCell.swift in Sources */,
 				FF8CA996228C10F100EC5186 /* EmoticonView.swift in Sources */,
 				786CFB4F225E3C3A00254D48 /* HomeViewController.swift in Sources */,
 				78932F13227C5E6000780DEB /* RoomViewController.swift in Sources */,
