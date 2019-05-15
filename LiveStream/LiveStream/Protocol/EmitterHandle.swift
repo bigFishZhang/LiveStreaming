@@ -55,6 +55,7 @@ extension EmitterHandle where Self:UIViewController{
     }
     
     func stopEmitter(){
+        
         view.layer.sublayers?.filter({$0.isKind(of: CAEmitterLayer.self)}).first?.removeFromSuperlayer()
         
 //        for layer in view.layer.sublayers! {

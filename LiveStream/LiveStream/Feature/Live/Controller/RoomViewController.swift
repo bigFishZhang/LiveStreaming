@@ -8,14 +8,24 @@
 
 import UIKit
 
+private let kChatToolsViewHeight : CGFloat = 44
+
 class RoomViewController: UIViewController,EmitterHandle {
     // MARK: 控件属性
     @IBOutlet weak var bgImageView: UIImageView!
-
+    
+    fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        view.backgroundColor = UIColor.randomColor()
+        
         setupUI()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name:UIResponder.keyboardWillChangeFrameNotification, object: nil)
+
+
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,6 +37,10 @@ class RoomViewController: UIViewController,EmitterHandle {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 
 
 }
@@ -34,6 +48,7 @@ class RoomViewController: UIViewController,EmitterHandle {
 extension RoomViewController {
     fileprivate func setupUI() {
         setupBlurView()
+        setupBottomView()
     }
     
     fileprivate func setupBlurView() {
@@ -43,6 +58,13 @@ extension RoomViewController {
         blurView.frame = bgImageView.bounds
         bgImageView.addSubview(blurView)
     }
+    
+    fileprivate func setupBottomView() {
+        chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kChatToolsViewHeight)
+        chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        chatToolsView.delegate = self
+        view.addSubview(chatToolsView)
+    }
 }
 
 
@@ -51,11 +73,16 @@ extension RoomViewController {
     @IBAction func exitBtnClick() {
         _ = navigationController?.popViewController(animated: true)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        chatToolsView.inputTextField.resignFirstResponder()
+    }
+    
     
     @IBAction func bottomMenuClick(_ sender: UIButton) {
         switch sender.tag {
         case 10:
             print("点击了聊天")
+            chatToolsView.inputTextField.becomeFirstResponder()
         case 11:
             print("点击了分享")
         case 12:
@@ -71,4 +98,28 @@ extension RoomViewController {
             fatalError("未处理按钮")
         }
     }
+}
+
+
+extension RoomViewController {
+    @objc fileprivate func keyboardWillChangeFrame(_ note : Notification){
+        let duration = note.userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
+        let endFrame = (note.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let inputViewY = endFrame.origin.y - kChatToolsViewHeight
+
+        UIView.animate(withDuration: duration, animations: {
+            UIView.setAnimationCurve(UIView.AnimationCurve(rawValue: 7)!)
+            let endY = inputViewY == (SCREEN_HEIGHT - kChatToolsViewHeight) ? SCREEN_HEIGHT : inputViewY
+            self.chatToolsView.frame.origin.y = endY
+        })
+    }
+    
+    
+}
+// MARK:- 监听用户输入的内容
+extension RoomViewController : ChatToolsViewDelegate {
+    func chatToolsView(toolView: ChatToolsView, message: String) {
+         print(message)
+    }
+    
 }

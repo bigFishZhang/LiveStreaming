@@ -30,6 +30,9 @@
                         <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-ys-oKN" userLabel="聊天">
                             <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="44"/>
                             <state key="normal" image="room_btn_chat"/>
+                            <connections>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="Teh-dD-3vb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-FK-byG" userLabel="分享">
                             <rect key="frame" x="82.666666666666671" y="0.0" width="83.000000000000014" height="44"/>
