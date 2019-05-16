@@ -105,6 +105,10 @@ extension ZBPageCollectionView{
         collectionView.register(nib, forCellWithReuseIdentifier: identifier)
         
     }
+    
+    func reloadData() {
+        collectionView.reloadData()
+    }
 }
 
 

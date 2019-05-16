@@ -10,11 +10,14 @@ import UIKit
 
 private let kChatToolsViewHeight : CGFloat = 44
 
+private let kGiftlistViewHeight : CGFloat = SCREEN_HEIGHT * 0.5
+
 class RoomViewController: UIViewController,EmitterHandle {
     // MARK: 控件属性
     @IBOutlet weak var bgImageView: UIImageView!
     
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
+    fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
     
     override func viewDidLoad() {
         
@@ -60,10 +63,18 @@ extension RoomViewController {
     }
     
     fileprivate func setupBottomView() {
+         // 1.设置chatToolsView
         chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kChatToolsViewHeight)
         chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
         chatToolsView.delegate = self
         view.addSubview(chatToolsView)
+        // 2.设置giftListView
+        giftListView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kGiftlistViewHeight)
+        giftListView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        view.addSubview(giftListView)
+        giftListView.delegate = self
+        
+        
     }
 }
 
@@ -74,7 +85,14 @@ extension RoomViewController {
         _ = navigationController?.popViewController(animated: true)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         chatToolsView.inputTextField.resignFirstResponder()
+        
+        //隐藏礼物
+        UIView.animate(withDuration: 0.25) {
+            self.giftListView.frame.origin.y = SCREEN_HEIGHT
+        }
+        
     }
     
     
@@ -87,6 +105,9 @@ extension RoomViewController {
             print("点击了分享")
         case 12:
             print("点击了礼物")
+            UIView.animate(withDuration: 0.25) {
+                self.giftListView.frame.origin.y  =  SCREEN_HEIGHT - kGiftlistViewHeight
+            }
         case 13:
             print("点击了更多")
         case 14:
@@ -100,7 +121,7 @@ extension RoomViewController {
     }
 }
 
-
+// MARK:- 监听键盘的弹出
 extension RoomViewController {
     @objc fileprivate func keyboardWillChangeFrame(_ note : Notification){
         let duration = note.userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
@@ -117,9 +138,16 @@ extension RoomViewController {
     
 }
 // MARK:- 监听用户输入的内容
-extension RoomViewController : ChatToolsViewDelegate {
+extension RoomViewController : ChatToolsViewDelegate ,GiftListViewDelegate{
     func chatToolsView(toolView: ChatToolsView, message: String) {
          print(message)
     }
+    
+    func giftListView(giftView: GiftListView, giftModel: GiftModel) {
+        print(giftModel.subject)
+    }
+    
+    
+    
     
 }

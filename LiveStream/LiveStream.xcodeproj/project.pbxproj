@@ -47,6 +47,7 @@
 		D1B75061228C645100E55BFA /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7505F228C645100E55BFA /* GiftViewCell.swift */; };
 		D1B75062228C645100E55BFA /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B75060228C645100E55BFA /* GiftViewCell.xib */; };
 		D1B75064228C645D00E55BFA /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B75063228C645D00E55BFA /* GiftListView.xib */; };
+		D1E4572F228CF7D50044778C /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4572E228CF7D50044778C /* GiftViewModel.swift */; };
 		FF8CA98D228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */; };
 		FF8CA98E228C07EF00EC5186 /* ZBPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */; };
 		FF8CA992228C10AA00EC5186 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA991228C10AA00EC5186 /* ChatToolsView.swift */; };
@@ -107,6 +108,7 @@
 		D1B7505F228C645100E55BFA /* GiftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
 		D1B75060228C645100E55BFA /* GiftViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
 		D1B75063228C645D00E55BFA /* GiftListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		D1E4572E228CF7D50044778C /* GiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionView.swift; sourceTree = "<group>"; };
@@ -467,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */,
+				D1E4572E228CF7D50044778C /* GiftViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-LiveStream/Pods-LiveStream-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -599,6 +603,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -632,6 +637,7 @@
 				78932F07227C3C1500780DEB /* HomeType.swift in Sources */,
 				D1B7505D228C643000E55BFA /* GiftListView.swift in Sources */,
 				78932EE8227C30B000780DEB /* BaseModel.swift in Sources */,
+				D1E4572F228CF7D50044778C /* GiftViewModel.swift in Sources */,
 				78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */,
 				78932F03227C399800780DEB /* KingfisherExtension.swift in Sources */,
 				786CFB40225E3C2C00254D48 /* ZBTabBar.swift in Sources */,
