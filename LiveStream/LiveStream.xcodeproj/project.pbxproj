@@ -59,6 +59,8 @@
 		FF8CA9A1228C2E4200EC5186 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */; };
 		FF8CA9A4228C2EAB00EC5186 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA9A2228C2EAB00EC5186 /* QHSohuGifSort.plist */; };
 		FF8CA9A5228C2EAB00EC5186 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA9A3228C2EAB00EC5186 /* QHNormalEmotionSort.plist */; };
+		FF98E23A228CF5F10032A03C /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98E239228CF5F10032A03C /* GiftModel.swift */; };
+		FF98E23C228CF6C70032A03C /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98E23B228CF6C70032A03C /* GiftPackage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,8 @@
 		FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		FF8CA9A2228C2EAB00EC5186 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		FF8CA9A3228C2EAB00EC5186 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		FF98E239228CF5F10032A03C /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftModel.swift; path = LiveStream/Feature/Live/ViewModel/GiftModel.swift; sourceTree = SOURCE_ROOT; };
+		FF98E23B228CF6C70032A03C /* GiftPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftPackage.swift; path = LiveStream/Feature/Live/ViewModel/GiftPackage.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +381,8 @@
 			children = (
 				FF8CA99B228C1B5900EC5186 /* Emoticon.swift */,
 				FF8CA99D228C1BA100EC5186 /* EmoticonPackage.swift */,
+				FF98E239228CF5F10032A03C /* GiftModel.swift */,
+				FF98E23B228CF6C70032A03C /* GiftPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -615,10 +621,12 @@
 				FF8CA9A1228C2E4200EC5186 /* EmoticonViewModel.swift in Sources */,
 				78932EF6227C321900780DEB /* ZBPageView.swift in Sources */,
 				FF8CA99C228C1B5900EC5186 /* Emoticon.swift in Sources */,
+				FF98E23C228CF6C70032A03C /* GiftPackage.swift in Sources */,
 				FF8CA999228C110900EC5186 /* EmoticonViewCell.swift in Sources */,
 				786CFB58225E402B00254D48 /* RankViewController.swift in Sources */,
 				78932EFE227C351300780DEB /* ZBWaterFlowLayout.swift in Sources */,
 				786CFB52225E3C3A00254D48 /* MineViewController.swift in Sources */,
+				FF98E23A228CF5F10032A03C /* GiftModel.swift in Sources */,
 				78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */,
 				78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */,
 				78932F07227C3C1500780DEB /* HomeType.swift in Sources */,
