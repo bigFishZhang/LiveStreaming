@@ -141,7 +141,7 @@ extension ZBTitleView{
     
     @objc fileprivate func titleLableClick(_ tapGes:UITapGestureRecognizer){
         //1 取出点击的View
-        let targetLabel = tapGes.view as! UILabel
+        guard let targetLabel = tapGes.view as? UILabel else {return}
         //2 调整title
         adjustTitleLabel(targetIndex: targetLabel.tag)
         //3 调整bottomLine
@@ -151,9 +151,7 @@ extension ZBTitleView{
                 self.bottomLine.frame.size.width = targetLabel.frame.width
             })
         }
-        
-        
-        
+
         //4 通知contentView
         delegate?.titleView(self, targetIndex: currentIndex)
     }

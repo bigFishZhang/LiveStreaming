@@ -48,6 +48,10 @@
 		D1B75062228C645100E55BFA /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B75060228C645100E55BFA /* GiftViewCell.xib */; };
 		D1B75064228C645D00E55BFA /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B75063228C645D00E55BFA /* GiftListView.xib */; };
 		D1E4572F228CF7D50044778C /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4572E228CF7D50044778C /* GiftViewModel.swift */; };
+		FF4FA0FF228D442F00864C22 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA0FB228D442F00864C22 /* Emoticon.swift */; };
+		FF4FA100228D442F00864C22 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA0FC228D442F00864C22 /* EmoticonPackage.swift */; };
+		FF4FA101228D442F00864C22 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA0FD228D442F00864C22 /* GiftPackage.swift */; };
+		FF4FA102228D442F00864C22 /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FA0FE228D442F00864C22 /* GiftModel.swift */; };
 		FF8CA98D228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */; };
 		FF8CA98E228C07EF00EC5186 /* ZBPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */; };
 		FF8CA992228C10AA00EC5186 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA991228C10AA00EC5186 /* ChatToolsView.swift */; };
@@ -55,13 +59,9 @@
 		FF8CA996228C10F100EC5186 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA995228C10F100EC5186 /* EmoticonView.swift */; };
 		FF8CA999228C110900EC5186 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA997228C110900EC5186 /* EmoticonViewCell.swift */; };
 		FF8CA99A228C110900EC5186 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA998228C110900EC5186 /* EmoticonViewCell.xib */; };
-		FF8CA99C228C1B5900EC5186 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA99B228C1B5900EC5186 /* Emoticon.swift */; };
-		FF8CA99E228C1BA100EC5186 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA99D228C1BA100EC5186 /* EmoticonPackage.swift */; };
 		FF8CA9A1228C2E4200EC5186 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */; };
 		FF8CA9A4228C2EAB00EC5186 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA9A2228C2EAB00EC5186 /* QHSohuGifSort.plist */; };
 		FF8CA9A5228C2EAB00EC5186 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA9A3228C2EAB00EC5186 /* QHNormalEmotionSort.plist */; };
-		FF98E23A228CF5F10032A03C /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98E239228CF5F10032A03C /* GiftModel.swift */; };
-		FF98E23C228CF6C70032A03C /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98E23B228CF6C70032A03C /* GiftPackage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +110,10 @@
 		D1B75063228C645D00E55BFA /* GiftListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
 		D1E4572E228CF7D50044778C /* GiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		D6D542C983F6FDB6D112190C /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
+		FF4FA0FB228D442F00864C22 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		FF4FA0FC228D442F00864C22 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		FF4FA0FD228D442F00864C22 /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		FF4FA0FE228D442F00864C22 /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
 		FF8CA98B228C07EF00EC5186 /* ZBPageCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		FF8CA98C228C07EF00EC5186 /* ZBPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBPageCollectionView.swift; sourceTree = "<group>"; };
 		FF8CA991228C10AA00EC5186 /* ChatToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
@@ -117,13 +121,9 @@
 		FF8CA995228C10F100EC5186 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		FF8CA997228C110900EC5186 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
 		FF8CA998228C110900EC5186 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
-		FF8CA99B228C1B5900EC5186 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Emoticon.swift; path = LiveStream/Feature/Live/View/ChatView/Emoticon.swift; sourceTree = SOURCE_ROOT; };
-		FF8CA99D228C1BA100EC5186 /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmoticonPackage.swift; path = LiveStream/Feature/Live/View/ChatView/EmoticonPackage.swift; sourceTree = SOURCE_ROOT; };
 		FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		FF8CA9A2228C2EAB00EC5186 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		FF8CA9A3228C2EAB00EC5186 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
-		FF98E239228CF5F10032A03C /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftModel.swift; path = LiveStream/Feature/Live/ViewModel/GiftModel.swift; sourceTree = SOURCE_ROOT; };
-		FF98E23B228CF6C70032A03C /* GiftPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftPackage.swift; path = LiveStream/Feature/Live/ViewModel/GiftPackage.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,23 +370,12 @@
 		78932F10227C5E4A00780DEB /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				FF4FA0FA228D442F00864C22 /* Model */,
 				FF8CA9A6228C364D00EC5186 /* Controller */,
 				FF8CA99F228C2E3300EC5186 /* ViewModel */,
 				78932F16227C5E6C00780DEB /* View */,
-				78932F15227C5E6700780DEB /* Model */,
 			);
 			path = Live;
-			sourceTree = "<group>";
-		};
-		78932F15227C5E6700780DEB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FF8CA99B228C1B5900EC5186 /* Emoticon.swift */,
-				FF8CA99D228C1BA100EC5186 /* EmoticonPackage.swift */,
-				FF98E239228CF5F10032A03C /* GiftModel.swift */,
-				FF98E23B228CF6C70032A03C /* GiftPackage.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		78932F16227C5E6C00780DEB /* View */ = {
@@ -451,6 +440,17 @@
 				8EC9C78DCBEC4918C3B8BC12 /* Pods_LiveStream.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF4FA0FA228D442F00864C22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FA0FB228D442F00864C22 /* Emoticon.swift */,
+				FF4FA0FC228D442F00864C22 /* EmoticonPackage.swift */,
+				FF4FA0FD228D442F00864C22 /* GiftPackage.swift */,
+				FF4FA0FE228D442F00864C22 /* GiftModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FF8CA98F228C103700EC5186 /* ChatView */ = {
@@ -619,26 +619,26 @@
 			files = (
 				FF8CA98E228C07EF00EC5186 /* ZBPageCollectionView.swift in Sources */,
 				78932EF5227C321900780DEB /* ZBContentView.swift in Sources */,
-				FF8CA99E228C1BA100EC5186 /* EmoticonPackage.swift in Sources */,
+				FF4FA100228D442F00864C22 /* EmoticonPackage.swift in Sources */,
 				78932F05227C3BD100780DEB /* HomeViewModel.swift in Sources */,
 				786CFB2C225E3BD900254D48 /* ViewController.swift in Sources */,
 				78932EF3227C321900780DEB /* ZBTitleView.swift in Sources */,
 				FF8CA9A1228C2E4200EC5186 /* EmoticonViewModel.swift in Sources */,
 				78932EF6227C321900780DEB /* ZBPageView.swift in Sources */,
-				FF8CA99C228C1B5900EC5186 /* Emoticon.swift in Sources */,
-				FF98E23C228CF6C70032A03C /* GiftPackage.swift in Sources */,
 				FF8CA999228C110900EC5186 /* EmoticonViewCell.swift in Sources */,
+				FF4FA101228D442F00864C22 /* GiftPackage.swift in Sources */,
 				786CFB58225E402B00254D48 /* RankViewController.swift in Sources */,
 				78932EFE227C351300780DEB /* ZBWaterFlowLayout.swift in Sources */,
 				786CFB52225E3C3A00254D48 /* MineViewController.swift in Sources */,
-				FF98E23A228CF5F10032A03C /* GiftModel.swift in Sources */,
 				78F574E1227D501600CE0D38 /* EmitterHandle.swift in Sources */,
 				78932F0B227C3D3500780DEB /* AnchorViewController.swift in Sources */,
+				FF4FA0FF228D442F00864C22 /* Emoticon.swift in Sources */,
 				78932F07227C3C1500780DEB /* HomeType.swift in Sources */,
 				D1B7505D228C643000E55BFA /* GiftListView.swift in Sources */,
 				78932EE8227C30B000780DEB /* BaseModel.swift in Sources */,
 				D1E4572F228CF7D50044778C /* GiftViewModel.swift in Sources */,
 				78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */,
+				FF4FA102228D442F00864C22 /* GiftModel.swift in Sources */,
 				78932F03227C399800780DEB /* KingfisherExtension.swift in Sources */,
 				786CFB40225E3C2C00254D48 /* ZBTabBar.swift in Sources */,
 				786CFB56225E402000254D48 /* FoundViewController.swift in Sources */,

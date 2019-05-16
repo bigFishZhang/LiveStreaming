@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-
+import SwiftyJSON
 enum MethodType {
     case get
     case post
@@ -31,15 +31,15 @@ class NetworkTools {
         
         // 2.发送网络请求
         Alamofire.request(URLString, method: method, parameters: parameters).responseJSON { (response) in
+            
             // 3.获取结果
             guard let result = response.result.value else {
                 print(response.result.error!)
                 finishedCallback(response)//for test
                 return
             }
-            print(result);
             // 4.将结果回调出去
-            finishedCallback("result:  \(result)")
+            finishedCallback(result)
         }
 
     }
