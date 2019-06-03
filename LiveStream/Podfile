@@ -7,6 +7,8 @@ target 'LiveStream' do
   pod 'Alamofire'
   pod 'Kingfisher'
   pod 'SwiftyJSON'
+  pod 'ProtocolBuffers-Swift'
+
   # Pods for LiveStream
 
 end
