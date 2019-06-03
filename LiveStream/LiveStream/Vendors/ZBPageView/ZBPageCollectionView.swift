@@ -148,11 +148,14 @@ extension ZBPageCollectionView:UICollectionViewDelegate{
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         scrollViewEndScroll()
+        scrollView.isScrollEnabled = true
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate{
             scrollViewEndScroll()
+        }else{
+            scrollView.isScrollEnabled = false
         }
     }
     
