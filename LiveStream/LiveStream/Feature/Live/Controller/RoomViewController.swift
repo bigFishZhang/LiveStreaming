@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 private let kChatToolsViewHeight : CGFloat = 44
 
 private let kGiftlistViewHeight : CGFloat = SCREEN_HEIGHT * 0.5
+
+private let kChatContentViewHeight : CGFloat = 200
 
 class RoomViewController: UIViewController,EmitterHandle {
     // MARK: 控件属性
@@ -18,16 +22,20 @@ class RoomViewController: UIViewController,EmitterHandle {
     
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
     fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
+    fileprivate lazy var chatContentView : ChatContentView = ChatContentView.loadFromNib()
+    
+    fileprivate lazy var socket : ZBSocket = ZBSocket(addr: "172.18.220.109", port: 7999)
+    fileprivate var heartBeatTimer : Timer?
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        //1 设置UI界面 
         setupUI()
-        
+        //2 监听键盘通知
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name:UIResponder.keyboardWillChangeFrameNotification, object: nil)
-
-
+        //3 连接聊天服务器
+        connectServer()
         
     }
 
@@ -41,8 +49,16 @@ class RoomViewController: UIViewController,EmitterHandle {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        //离开房间
+        socket.sendLeaveRoom()
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
+        heartBeatTimer?.invalidate()
+        heartBeatTimer = nil
     }
 
 
@@ -63,7 +79,13 @@ extension RoomViewController {
     }
     
     fileprivate func setupBottomView() {
-         // 1.设置chatToolsView
+        // 0.设置聊天内容界面
+        chatContentView.frame = CGRect(x: 0, y: view.bounds.height - kChatToolsViewHeight - kChatContentViewHeight , width: view.bounds.width, height: kChatContentViewHeight)
+        chatContentView.autoresizingMask = [.flexibleWidth,.flexibleTopMargin]
+        view.addSubview(chatContentView)
+        
+        
+        // 1.设置chatToolsView
         chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kChatToolsViewHeight)
         chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
         chatToolsView.delegate = self
@@ -73,6 +95,8 @@ extension RoomViewController {
         giftListView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
         view.addSubview(giftListView)
         giftListView.delegate = self
+        
+        
         
         
     }
@@ -114,7 +138,7 @@ extension RoomViewController {
             sender.isSelected = !sender.isSelected
             let point = CGPoint(x: sender.center.x, y: view.bounds.height - sender.bounds.height * 0.5)
             sender.isSelected ? startEmitter(point) : stopEmitter()
-            print("点击了粒子")
+//            print("点击了粒子")
         default:
             fatalError("未处理按钮")
         }
@@ -132,6 +156,11 @@ extension RoomViewController {
             UIView.setAnimationCurve(UIView.AnimationCurve(rawValue: 7)!)
             let endY = inputViewY == (SCREEN_HEIGHT - kChatToolsViewHeight) ? SCREEN_HEIGHT : inputViewY
             self.chatToolsView.frame.origin.y = endY
+            
+            let contentEndY = inputViewY == (SCREEN_HEIGHT - kChatToolsViewHeight) ? (SCREEN_HEIGHT - kChatToolsViewHeight - kChatContentViewHeight) : endY - kChatContentViewHeight
+            
+            self.chatContentView.frame.origin.y = contentEndY
+            
         })
     }
     
@@ -140,14 +169,76 @@ extension RoomViewController {
 // MARK:- 监听用户输入的内容
 extension RoomViewController : ChatToolsViewDelegate ,GiftListViewDelegate{
     func chatToolsView(toolView: ChatToolsView, message: String) {
-         print(message)
+        print(message)
+        socket.sendTextMsg(message)
     }
     
     func giftListView(giftView: GiftListView, giftModel: GiftModel) {
         print(giftModel.subject)
+        socket.sendGiftMsg(giftModel.subject, giftModel.img2, 1)
     }
     
     
     
     
+}
+
+// MARK: -给聊天服务器发送消息
+extension RoomViewController {
+    fileprivate func connectServer(){
+        if socket.connectServer(){
+            print("聊天服务器连接成功")
+            //成为代理
+            socket.delegate = self
+            
+            //开始接收消息
+            socket.startReadMsg()
+            
+            //开始发送心跳包
+            addHeartBeatTimer()
+            
+            //加入房间
+            socket.sendJoinRoom()
+            
+        }
+    }
+    
+    
+    fileprivate func addHeartBeatTimer(){
+        heartBeatTimer = Timer(fireAt: Date(),
+                               interval: 9,
+                               target: self,
+                               selector: #selector(sendHeartBeat),
+                               userInfo: nil, repeats: true)
+        RunLoop.main.add(heartBeatTimer!, forMode: .common)
+        
+    }
+    @objc fileprivate func sendHeartBeat(){
+        socket.sendHeartBeat()
+    }
+
+}
+
+extension RoomViewController:ZBSocketDelegate{
+    func socket(_ socket: ZBSocket, chatMsg: ChatMessage) {
+        print("\(chatMsg.user.name ?? "") send msg: \(chatMsg.text!)")
+        chatContentView.insertMsg("\(chatMsg.user.name ?? "") send msg: \(chatMsg.text!)" )
+    }
+    
+    func socket(_ socket: ZBSocket, giftMsg: GiftMessage) {
+        
+        print("\(giftMsg.user.name ?? "") send gift: \(giftMsg.giftname ?? "") url: \(giftMsg.giftUrl ?? "") ")
+        
+        chatContentView.insertMsg("\(giftMsg.user.name ?? "") send gift: \(giftMsg.giftname ?? "") url: \(giftMsg.giftUrl ?? "") ")
+    }
+    
+    func socket(_ socket: ZBSocket, joinRoom user: UserInfo) {
+        print("\(user.name ?? "") 进入房间")
+          chatContentView.insertMsg("\(user.name ?? "") 进入房间" )
+    }
+    
+    func socket(_ socket: ZBSocket, leaveRoom user: UserInfo) {
+        print("\(user.name ?? "") 离开房间")
+        chatContentView.insertMsg("\(user.name ?? "") 离开房间" )
+    }
 }
