@@ -74,6 +74,7 @@
 		FF8CA9A1228C2E4200EC5186 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */; };
 		FF8CA9A4228C2EAB00EC5186 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA9A2228C2EAB00EC5186 /* QHSohuGifSort.plist */; };
 		FF8CA9A5228C2EAB00EC5186 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CA9A3228C2EAB00EC5186 /* QHNormalEmotionSort.plist */; };
+		FFE5193B22A759C9003FDBF5 /* AttrStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5193A22A759C9003FDBF5 /* AttrStringGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		FF8CA9A0228C2E4200EC5186 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		FF8CA9A2228C2EAB00EC5186 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		FF8CA9A3228C2EAB00EC5186 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		FFE5193A22A759C9003FDBF5 /* AttrStringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttrStringGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +392,7 @@
 			children = (
 				78932F00227C36F500780DEB /* NetworkTools.swift */,
 				78932F02227C399800780DEB /* KingfisherExtension.swift */,
+				FFE5193A22A759C9003FDBF5 /* AttrStringGenerator.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -695,6 +698,7 @@
 				D1E4572F228CF7D50044778C /* GiftViewModel.swift in Sources */,
 				78DBA642225FAD3A00FD155D /* UIColor+ZBExtension.swift in Sources */,
 				FF4FA102228D442F00864C22 /* GiftModel.swift in Sources */,
+				FFE5193B22A759C9003FDBF5 /* AttrStringGenerator.swift in Sources */,
 				78932F03227C399800780DEB /* KingfisherExtension.swift in Sources */,
 				FF27F08722A526C1004815D3 /* yudpsocket.c in Sources */,
 				786CFB40225E3C2C00254D48 /* ZBTabBar.swift in Sources */,

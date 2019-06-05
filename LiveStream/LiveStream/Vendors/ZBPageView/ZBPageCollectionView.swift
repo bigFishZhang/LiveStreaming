@@ -195,9 +195,9 @@ extension ZBPageCollectionView:ZBTitleViewDelegate{
     func titleView(_ titleView: ZBTitleView, targetIndex: Int) {
         
         let indexPath = IndexPath(item: 0, section: targetIndex)
-        //判断是否可以调过去
+        //判断是否可以跳过去
         collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
-        collectionView.contentOffset.x += layout.sectionInset.left
+        collectionView.contentOffset.x -= layout.sectionInset.left
         
         scrollViewEndScroll()
         

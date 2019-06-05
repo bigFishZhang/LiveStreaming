@@ -15,7 +15,7 @@ class ChatContentView: UIView,NibLoadable {
     @IBOutlet weak var chatTableView: UITableView!
     
     //save msg
-    fileprivate lazy var messages : [String] = [String]()
+    fileprivate lazy var messages : [NSAttributedString] = [NSAttributedString]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +28,7 @@ class ChatContentView: UIView,NibLoadable {
         
     }
     
-    func insertMsg(_ msg:String)  {
+    func insertMsg(_ msg:NSAttributedString)  {
         messages.append(msg)
         chatTableView.reloadData()
         
@@ -50,7 +50,7 @@ extension ChatContentView: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: kChatContentCell, for: indexPath) as! ChatContenCell
-        cell.contentLabel.text = messages[indexPath.row]
+        cell.contentLabel.attributedText = messages[indexPath.row]
         return cell
         
     }

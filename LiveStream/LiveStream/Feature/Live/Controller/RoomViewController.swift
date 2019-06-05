@@ -222,23 +222,27 @@ extension RoomViewController {
 extension RoomViewController:ZBSocketDelegate{
     func socket(_ socket: ZBSocket, chatMsg: ChatMessage) {
         print("\(chatMsg.user.name ?? "") send msg: \(chatMsg.text!)")
-        chatContentView.insertMsg("\(chatMsg.user.name ?? "") send msg: \(chatMsg.text!)" )
+        chatContentView.insertMsg(AttrStringGenerator.generateTextMessage(chatMsg.user.name, chatMsg.text))
+       
+        
     }
     
     func socket(_ socket: ZBSocket, giftMsg: GiftMessage) {
         
         print("\(giftMsg.user.name ?? "") send gift: \(giftMsg.giftname ?? "") url: \(giftMsg.giftUrl ?? "") ")
         
-        chatContentView.insertMsg("\(giftMsg.user.name ?? "") send gift: \(giftMsg.giftname ?? "") url: \(giftMsg.giftUrl ?? "") ")
+       chatContentView.insertMsg(AttrStringGenerator.generateGiftMessage(giftMsg.user.name, giftMsg.giftname, giftMsg.giftUrl))
     }
     
     func socket(_ socket: ZBSocket, joinRoom user: UserInfo) {
         print("\(user.name ?? "") 进入房间")
-          chatContentView.insertMsg("\(user.name ?? "") 进入房间" )
+        chatContentView.insertMsg(AttrStringGenerator.generateJoinLeaveRoomMsg(user.name, true))
+        //  chatContentView.insertMsg("\(user.name ?? "") 进入房间" )
     }
     
     func socket(_ socket: ZBSocket, leaveRoom user: UserInfo) {
         print("\(user.name ?? "") 离开房间")
-        chatContentView.insertMsg("\(user.name ?? "") 离开房间" )
+        chatContentView.insertMsg(AttrStringGenerator.generateJoinLeaveRoomMsg(user.name, false))
+        //chatContentView.insertMsg("\(user.name ?? "") 离开房间" )
     }
 }
